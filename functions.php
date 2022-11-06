@@ -47,6 +47,9 @@ function themeConfig($form)
 
     $timePageIcon = new Text('timePageIcon', NULL, NULL, _t('首页点点滴滴图标'), _t('在此输入图标直链，将显示在首页点点滴滴小版块中'));
     $form->addInput($timePageIcon);
+    
+    $neteaseid = new Typecho_Widget_Helper_Form_Element_Text('neteaseid', NULL, NULL, _t('网易云歌单id'), _t('在此输入网易云歌单id，如：7520999990.6616300983'));
+    $form->addInput($neteaseid);
 
     $CustomContenth = new Textarea('头部自定义', NULL, NULL, _t('头部自定义内容'), _t('位于头部，head内，适合放置一些链接引用或自定义内容'));
     $form->addInput($CustomContenth);
@@ -58,7 +61,3 @@ function themeConfig($form)
     $form->addInput($pjaxContent);
 
 }
-
-
-
-
